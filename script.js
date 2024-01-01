@@ -44,9 +44,12 @@ adventurer.companion.companion={
     belongings: ['small hat','sunglasses']
 }
 
-//Methods define specific actions that object can take. Adding Roll method to the adventurer:
+//Methods define specific actions that object can take. Adding “dice rolls” method to the adventurer:
 
 adventurer.roll = function (mod = 0) {
     const result = Math.floor(Math.random() * 20) + 1 + mod;
     console.log(`${this.name} rolled a ${result}.`)
 }
+
+// What if we had many adventurers? As we can imagine, creating several of these objects manually would be time consuming, inefficient, and prone to errors. Lets level up our approach using Classes..
+ 
